@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<style>.tick { font: 24px sans-serif; }</style>
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,17 +22,42 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<script src="https://d3js.org/d3.v5.js"></script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown="md/section-1.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n---\n"></section>
+				<section data-markdown="md/section-2.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n---\n"></section>
+				<section>
+					<!-- Add 2 buttons -->
+					<select id="selectButton"></select>
+
+					<div id="my_dataviz"></div>
+
+				</section>
+				<section data-markdown="md/section-3.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n---\n"></section>
+				<section data-markdown="md/section-4.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n---\n"></section>
+				<section data-markdown="md/section-5.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n---\n"></section>
+				<section data-markdown="md/section-6.md"
+						 data-separator="^\n\n\n"
+						 data-separator-vertical="^\n---\n"></section>
 			</div>
 		</div>
 
 		<script src="js/reveal.js"></script>
-
+        <script src="js/plot.js"></script>
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
@@ -41,8 +67,10 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					//{ src: 'plugin/notes/notes.js', async: true }
+					// MathJax
+					{ src: 'plugin/math/math.js', async: true }
 				]
 			});
 		</script>
