@@ -11,7 +11,7 @@ If this does not go unpunished, `$w$` keeps growing, e.g. when `$w_0 = 1$`.
 
 
 Under _off-policy_ learning, punishment can be avoided.
-![Baird's counterexample](../img/baird.png)
+![Baird's counterexample](./img/baird.png)
 
 ---
 
