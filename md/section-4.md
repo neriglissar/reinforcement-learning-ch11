@@ -15,7 +15,7 @@ $$`
 
 
 
-![The Geometry of Errors](../img/errors.png)
+![The Geometry of Errors](./img/errors.png)
 
 ---
 
